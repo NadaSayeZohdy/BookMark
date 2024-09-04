@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarker</title>
+
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h2 class="text-center mb-4 title">Bookmarker</h2>
+    <div class="dotted-line"></div>
+    <h3 class="subtitle gradient-text"><i class="fas fa-bookmark" style="color: #3ca55c;"></i> Bookmark your favorite sites <i class="fas fa-bookmark" style="color: #b5ac49;"></i></h3>
+    <div class="card">
+      <div class="card-body">
+        <form id="bookmarkForm">
+          <div class="form-row">
+            <div class="form-group col-md-12 w-100 mb-4">
+              <p class="fs-5 fw-bold"><i class="fas fa-bookmark"></i> Site Name</p>
+              <input type="text" class="form-control highlight-orange" id="bookmarkName" placeholder="Bookmark Name" required>
+            </div>
+            <div class="form-group col-md-12 w-100 mb-4">
+              <p class="fs-5 fw-bold"><i class="fas fa-link"></i> Site URL</p>
+              <input type="text" class="form-control highlight-orange" id="bookmarkURL" placeholder="Website URL" required>
+            </div>
+            <div class="form-group col-md-12 text-center">
+              <button type="submit" class="btn btn-danger submit-btn">Submit</button>
+            </div>
+          </div>
+          <div id="error-message" class="text-danger mt-2" style="display: none;"></div>
+        </form>
+      </div>
+    </div>
+    <div class="table-wrapper"> 
+      <table class="table table-striped mt-4">
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Bookmark Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="bookmarksList">
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

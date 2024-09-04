@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(252, 236, 238);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; 
+    height: 100vh;
+  .container {
+    margin-top: 50px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  }
+
+  
+    .form-control, .btn {
+    border-radius: 0;
+  }
+  .table td {
+    vertical-align: middle;
+  }
+  .submit-btn {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    border-radius: 5px;
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  .dotted-line {
+    border-top: 1px dotted #000;
+    margin-bottom: 20px;
+  }
+  .highlight-orange:focus, .highlight-orange:active {
+    outline: none;
+    box-shadow: 0 0 5px 2px #ffa500;
+  }
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    font-family: 'Lobster', cursive;
+    color: black;
+  }
+  .title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 33%;
+    width: 100%;
+    background-color: #ffa500;
+    z-index: -1;
+    transition: height 0.3s ease-in-out;
+  }
+  .title:hover::after {
+    height: 60%;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    position: relative;
+  }
+  .subtitle .fas {
+    margin: 0 10px;
+  }
+  .gradient-text {
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .form-row {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .table-wrapper {
+    overflow-x: auto;
+  }
